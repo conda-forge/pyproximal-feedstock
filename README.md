@@ -148,4 +148,5 @@ Feedstock Maintainers
 =====================
 
 * [@mlondschien](https://github.com/mlondschien/)
+* [@mrava87](https://github.com/mrava87/)
 
