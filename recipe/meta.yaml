@@ -1,5 +1,5 @@
 {% set name = "pyproximal" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyproximal-{{ version }}.tar.gz
-  sha256: a78dc4debaef3dba81ebf7b223aa829c05f8da6763aac0d0af55e40a39dccac9
+  sha256: 29b3fe7b971ff3063f7a28663dd6375b48befbf7115a01c653c84f1cd55d2d13
 
 build:
   noarch: python
