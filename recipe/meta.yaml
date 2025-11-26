@@ -1,5 +1,5 @@
 {% set name = "pyproximal" %}
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyproximal-{{ version }}.tar.gz
-  sha256: 6ec00305809c62a82be4926c2a84009368c3204fb76d91e4a6b5c5d94b1d3527
+  sha256: a51f14bd0ecdb62713e899320c0a515f1d48f35122b216c54a9329cb4d189ae9
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -22,9 +22,10 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy >=1.15.0, <2.0.0
-    - scipy >=1.8.0
+    - numpy >=1.21.0
+    - scipy >=1.11.0
     - pylops >=2.0.0
+    - typing-extensions
 
 test:
   imports:
