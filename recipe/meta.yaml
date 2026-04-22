@@ -19,6 +19,7 @@ requirements:
     - python {{ python_min }}
     - pytest-runner
     - hatchling
+    - hatch-vcs
     - pip
   run:
     - python >={{ python_min }}
